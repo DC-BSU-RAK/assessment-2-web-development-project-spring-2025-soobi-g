@@ -1,11 +1,11 @@
-// Simple form submission handler
+// handling submission
 document.getElementById('contactForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for your message! We will contact you soon.');
+    alert('Thank you for your message! our team will get in touch with you soon.');
     this.reset();
 });
 
-// Simple greeting based on time of day
+// greeting
 window.onload = function() {
     const hour = new Date().getHours();
     let greeting;
@@ -15,7 +15,7 @@ window.onload = function() {
     else greeting = "Good evening";
     
     const greetingElement = document.createElement('p');
-    greetingElement.textContent = `${greeting} and welcome to Hospital Tlemcen`;
+    greetingElement.textContent = `${greeting} and welcome to Chu Dr Tidjani Damerdji Tlemcen`;
     greetingElement.style.textAlign = 'center';
     greetingElement.style.margin = '10px 0';
     greetingElement.style.color = '#0056b3';
